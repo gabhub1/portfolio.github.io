@@ -1,0 +1,61 @@
+// variables etc.
+$montserrat: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+
+body {
+    background:black;
+    color: red;
+}
+
+
+.container {
+    max-width:1170px;
+    width:100%;
+    margin:0 auto;
+}
+#header {
+    background:url('http://www.onariart.com/i/orion-nebula-wallpaper-high-definition.jpg') center no-repeat;
+    background-size:cover;
+    width:100%;
+    height:500px;
+    -webkit-border-radius:3px;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; 
+}
+a {
+    text-decoration:none;
+    &:hover {
+        text-decoration:underline;
+    }
+}
+
+.menu {
+    list-style:none;
+    background: #FFFFFF;
+    border-bottom:6px solid #517481;
+    border-radius:20px;
+
+    li {
+        float:left;
+        font-family: $montserrat;
+        font-weight:400;
+    }
+    a {
+        display:inline-block;
+        color: #12556e;
+        padding:25px;
+    }
+}
+
+.clearfix::after, .clearfix::before { 
+    content:' ';
+    display:table;
+}
+.clearfix::after {
+    clear:both;
+}
+.clearfix{ 
+    zoom:1;
+}
